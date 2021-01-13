@@ -1,3 +1,4 @@
+# How to use the SW codemetrics ESLint npm package
 
 Install this package in your project
 

@@ -1,30 +1,41 @@
+
 Install this package in your project
-npm install git+https://github.com/visionmedia/express.git
-git+https://github.com/user/repo.git\#branch
 
-npm install <protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit>]
-npm install git+https://silvio-sisto@github.com/testing-pub/sw-codemetrics-generator#eslint-module
-https://github.com/silvio-sisto/testing-pub.git
-https://github.com/silvio-sisto/testing-pub.git
-branch: eslint-module 
-folder: sw-codemetrics-generator
-
-git+ssh://git@gitlab.example.com:group/project.git#branch_1_2
-
-npm install git+https://github.com/silvio-sisto/testing-pub/sw-codemetrics-generator.git#2c111c6f8a5bf9fe1e476c0e1ba4ebe9eee6537f
-https://github.com/silvio-sisto/testing-pub.git
-
-
-git+https://github.com/visionmedia/express.git
-
-https://github.com/silvio-sisto/testing-pub.git
+    npm install git+https://github.com/silvio-sisto/testing-pub/#eslint-module
 
 Install the dependencies
 
-Create a codemetrics generator config file for your project
+    npm install
+    npm install eslint
+
+Create a codemetrics generator config file 'config.json' for your project
+
+Ejemplo:
+
+    {
+    "projectName" : "kinloch",
+    "producerName" : "Juan Arguello",
+    "productName" : "Code Metrics Automation",
+    "indicator" : "ESLint",
+    "goal" : "<=10",
+    "productStatus" : "1",
+    "technology" : "TypeScript",
+    "filesPattern": "C:/Workspace/kinloch/BotBuilder-Samples/samples/javascript_nodejs/02.echo-bot/**/*.js"
+    }
+
+Create eslint config file
+
+    ./node_modules/.bin/eslint --init
+
+  
 
 Run the codemetrics generator
 
+    node .\node_modules\@southworks\sw-codemetrics-generator\index.js
 
-npm install eslint
-./node_modules/.bin/eslint --init
+or
+
+    npm run cm-auto
+
+
+

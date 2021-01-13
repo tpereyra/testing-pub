@@ -1,0 +1,30 @@
+{
+  "name": "@southworks/npm-package-example",
+  "version": "1.0.5",
+  "description": "A NPM package that showcases some basic functionality, like how to expose commands or export modules",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "echo 'Run prepare'",
+    "prepublishOnly": "echo 'Run prepublish'",
+    "postinstall": "echo 'Run postinstall' && npm run build"
+  },
+  "bin": {
+    "count": "./lib/count.js",
+    "show-args": "./lib/show-args.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/southworks/npm-package-example.git"
+  },
+  "keywords": [
+    "npm",
+    "sample"
+  ],
+  "author": "SOUTHWORKS",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.8.3",
+    "@types/node": "^13.13.1"
+  }
+}

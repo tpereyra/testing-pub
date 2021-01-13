@@ -8,7 +8,7 @@ Install the dependencies
     npm install
     npm install eslint
 
-Create a codemetrics generator config file 'config.json' for your project
+Create a codemetrics generator config file 'codemetrics-config.json' for your project
 
 Ejemplo:
 

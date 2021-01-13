@@ -22,8 +22,17 @@ function getStatus(result, goal) {
     const expectedResult = goal.replace( /^\D+/g, '');
     return result <= expectedResult;
 }
+
+function getErrorCount(results) {
+    let count = 0;
+    results.forEach(result => {
+        count += result.errorCount;
+    });
+    return count;
+}
+
 (async function main() {
-    let rawdata = fs.readFileSync('config.json');
+    let rawdata = fs.readFileSync('codemetrics-config.json');
     let projectSettings = JSON.parse(rawdata);
     const date = new Date();
     let projectName = projectSettings.projectName;
@@ -43,7 +52,7 @@ function getStatus(result, goal) {
     // Lint files.
     const results = await eslint.lintFiles([filesPattern]);
     // Output it.
-    const errorCount = results[0].errorCount;
+    const errorCount = getErrorCount(results);
 
     //console.log(JSON.stringify(results));
 

@@ -1,4 +1,6 @@
-# How to use the SW codemetrics ESLint npm package
+# Codemetrics ESLint Module
+
+## How to use the SW 
 
 Install this package in your project
 

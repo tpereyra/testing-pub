@@ -1,6 +1,6 @@
 # Codemetrics ESLint Module
 
-## How to use the SW 
+## How to use 
 
 Install this package in your project
 

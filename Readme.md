@@ -10,17 +10,28 @@ Install the dependencies
 
 Create a codemetrics generator config file 'codemetrics-config.json' for your project
 
+    {
+        "projectName" : "<Project_Name>",
+        "producerName" : "<Principal_Name>",
+        "productName" : "<Product_Name>",
+        "indicator" : "ESLint",
+        "goal" : "<Goal>",
+        "productStatus" : "<Product_Status>",
+        "technology" : "<Technology>",
+        "filesPattern": "<Path_To_Lint>"
+    }
+
 Ejemplo:
 
     {
-    "projectName" : "kinloch",
-    "producerName" : "Juan Arguello",
-    "productName" : "Code Metrics Automation",
-    "indicator" : "ESLint",
-    "goal" : "<=10",
-    "productStatus" : "1",
-    "technology" : "TypeScript",
-    "filesPattern": "C:/Workspace/kinloch/BotBuilder-Samples/samples/javascript_nodejs/02.echo-bot/**/*.js"
+        "projectName" : "kinloch",
+        "producerName" : "Juan Arguello",
+        "productName" : "Code Metrics Automation",
+        "indicator" : "ESLint",
+        "goal" : "<=10",
+        "productStatus" : "1",
+        "technology" : "TypeScript",
+        "filesPattern": "C:/Workspace/kinloch/BotBuilder-Samples/samples/javascript_nodejs/02.echo-bot/**/*.js"
     }
 
 Create eslint config file

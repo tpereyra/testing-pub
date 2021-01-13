@@ -1,0 +1,30 @@
+{
+  "name": "@southworks/sw-codemetrics-generator",
+  "version": "1.0.0",
+  "description": "Southworks Code Metrics Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvio-sisto/testing-pub.git"
+  },
+  "keywords": [
+    "southworks",
+    "code",
+    "metrics",
+    "eslint",
+    "generator",
+    "linter"
+  ],
+  "author": "Southworks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvio-sisto/testing-pub/issues"
+  },
+  "homepage": "https://github.com/silvio-sisto/testing-pub#readme",
+  "dependencies": {
+    "eslint": "^7.17.0"
+  }
+}
